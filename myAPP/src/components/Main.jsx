@@ -2,12 +2,12 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedinIn, FaGithub, FaDownload } from 'react-icons/fa';
 import pdf from '../assets/BThompsonResume.pdf'
-import backgroundImage from '../assets/macComputer.jpg';
+import backgroundImage from '../assets/gundam.jpg';
 
 const Main = () => {
   return (
     <div id='main'>
-      <img className=' h-screen' src='' alt='' />
+      <img className=' h-screen object-cover ' src={backgroundImage} alt='gundam' />
       <div className='w-full h-screen absolute top-0 left-0 bg-white/0'>
         <div className='max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center'>
           <h1 className='sm:text-5xl text-4xl front-bold text-black'>
