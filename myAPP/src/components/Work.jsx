@@ -42,7 +42,7 @@ const data = [
 
 const Work = () => {
   return (
-      <div id='work' className='mx-2 p-6 px-16'>
+      <div id='work' className='mx-2 p-6 px-16 py-16'>
         <h1 className='text-4xl fotn-bold text-center text-[#001b5e] mb-2'>Work</h1>
         {data.map((item, idex) => (
           <WorkCards
