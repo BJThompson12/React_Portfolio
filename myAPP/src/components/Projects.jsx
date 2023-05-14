@@ -2,10 +2,6 @@ import React from 'react';
 import ProjectCards from './ProjectCards'
 import animeImg from '../assets/anime.jpg'
 import landscapeImg from '../assets/landscape.jpg'
-// import propertyImg from '../assets/property.jpg';
-// import driveImg from '../assets/drive.jpg';
-// import beachesImg from '../assets/beaches.jpg';
-// import bestEatsImg from '../assets/bestEats.jpg';
 
 const Projects = () => {
   return (
@@ -14,11 +10,10 @@ const Projects = () => {
         Projects
       </h1>
       <p className='text-center py-8'>
-      
       </p>
       <div className='grid sm:grid-cols-2 gap-12'>
-        <ProjectCards img={animeImg} title='Animatch' />
-        <ProjectCards img={landscapeImg} title='Artiscapes' />
+        <ProjectCards img={animeImg} title='Animatch' href='https://animatch.herokuapp.com/'/>
+        <ProjectCards img={landscapeImg} title='Artiscapes' href='https://bjthompson12.github.io/Sea-Wolves/'/>
       </div>
     </div>
   );

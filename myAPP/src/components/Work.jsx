@@ -42,8 +42,8 @@ const data = [
 
 const Work = () => {
   return (
-      <div id='work' className='mx-2 p-6 px-16 py-16'>
-        <h1 className='text-4xl fotn-bold text-center text-[#001b5e] mb-2'>Work</h1>
+      <div id='work' className='max-w-[1040px] m-auto md:pl-20 p-4 py-16'>
+        <h1 className='py-4 mb-10 text-4xl font-bold text-center text-[#001b5e]'>Work</h1>
         {data.map((item, idex) => (
           <WorkCards
             key={idex}

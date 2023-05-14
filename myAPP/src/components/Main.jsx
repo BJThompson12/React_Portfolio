@@ -1,7 +1,8 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import backgroundImage from '../assets/macComputer.jpg'; // import the image file
+import { FaLinkedinIn, FaGithub, FaDownload } from 'react-icons/fa';
+import pdf from '../assets/BThompsonResume.pdf'
+import backgroundImage from '../assets/macComputer.jpg';
 
 const Main = () => {
   return (
@@ -47,6 +48,12 @@ const Main = () => {
               style={{ textDecoration: 'none' }}
             >
               <FaGithub className='cursor-pointer' size={20} />
+            </a>
+            <a
+              href={pdf} download={pdf}
+              style={{ textDecoration: 'none' }}
+            >
+              <FaDownload className='cursor-pointer' size={20} />
             </a>
           </div>
         </div>
