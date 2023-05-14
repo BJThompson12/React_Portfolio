@@ -6,7 +6,7 @@ import backgroundImage from '../assets/macComputer.jpg'; // import the image fil
 const Main = () => {
   return (
     <div id='main'>
-      <img className=' h-screen bg-auto' src='' alt='' />
+      <img className=' h-screen' src='' alt='' />
       <div className='w-full h-screen absolute top-0 left-0 bg-white/0'>
         <div className='max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center'>
           <h1 className='sm:text-5xl text-4xl front-bold text-black'>
@@ -19,6 +19,8 @@ const Main = () => {
                 'Developer', // Types 'One'
                 2000, // Waits 1s
                 'Coder', // Deletes 'One' and types 'Two'
+                2000, // Waits 2s
+                'Creator', // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
                 'Tech Enthusiast', // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
