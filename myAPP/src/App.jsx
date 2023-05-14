@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import Sidenav from './components/Sidenav';
 
 export default function App() {
   return (
     <>
-      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+     <Sidenav />
     </>
   );
 }
