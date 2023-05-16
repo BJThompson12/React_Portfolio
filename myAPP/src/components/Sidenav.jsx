@@ -17,7 +17,7 @@ const Sidenav = () => {
 
   return (
     <div>
-      <FcList
+      <FcList size={50}
         onClick={handleNav}
         className='absolute top-4 right-4 z-[99] md:hidden'
       />

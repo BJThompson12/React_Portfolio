@@ -2,12 +2,19 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedinIn, FaGithub, FaDownload } from 'react-icons/fa';
 import pdf from '../assets/BThompsonResume.pdf'
-import backgroundImage from '../assets/gundam.jpg';
-
+import background from '../assets/gundam.jpg';
+// div then set the image as bg image instead or src
+// check that the div is full width
+//background size cover - will stretch image to fill te container
 const Main = () => {
   return (
     <div id='main'>
-      <img className=' h-screen object-cover ' src={backgroundImage} alt='gundam' />
+      <div  style={{
+    backgroundImage: `url(${background})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  }}className='h-screen'>
       <div className='w-full h-screen absolute top-0 left-0 bg-white/0'>
         <div className='max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center'>
           <h1 className='sm:text-5xl text-4xl front-bold text-black'>
@@ -18,8 +25,6 @@ const Main = () => {
             <TypeAnimation
               sequence={[
                 'Developer', // Types 'One'
-                2000, // Waits 1s
-                'Coder', // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
                 'Creator', // Deletes 'One' and types 'Two'
                 2000, // Waits 2s
@@ -58,6 +63,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
