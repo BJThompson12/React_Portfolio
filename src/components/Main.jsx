@@ -3,9 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedinIn, FaGithub, FaDownload } from 'react-icons/fa';
 import pdf from '../assets/BThompsonResume.pdf'
 import background from '../assets/gundam.jpg';
-// div then set the image as bg image instead or src
-// check that the div is full width
-//background size cover - will stretch image to fill te container
+
 const Main = () => {
   return (
     <div id='main'>
@@ -13,11 +11,11 @@ const Main = () => {
     backgroundImage: `url(${background})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
   }}className='h-screen'>
       <div className='w-full h-screen absolute top-0 left-0 bg-white/0'>
         <div className='max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center'>
-          <h1 className='sm:text-5xl text-4xl front-bold text-black'>
+          <h1 className='sm:text-5xl text-4xl front-bold text-slate-900'>
             Brandon Thompson
           </h1>
           <h2 className='flex sm:text-3xl text-2xl pt-4 text-black'>

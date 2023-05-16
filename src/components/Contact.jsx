@@ -6,9 +6,7 @@ const Contact = () => {
       <h1 className='py-4 text-4xl font-bold text-center text-[#001b5e]'>
         Contact
       </h1>
-      <form
-     
-      >
+      <form>
         <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
           <div className='flex flex-col'>
             <label className='uppercase text-sm py-2 text-center'>Name</label>
@@ -16,6 +14,8 @@ const Contact = () => {
               className='border-2 rounded-lg p-3 flex border-gray-300'
               type='text'
               name='name'
+              pattern='^[A-Za-z\s]+$'
+              required
             />
           </div>
           <div className='flex flex-col'>
@@ -24,6 +24,8 @@ const Contact = () => {
               className='border-2 rounded-lg p-3 flex border-gray-300'
               type='text'
               name='phone'
+              pattern='^\d{10}$'
+              required
             />
           </div>
         </div>
@@ -33,6 +35,8 @@ const Contact = () => {
             className='border-2 rounded-lg p-3 flex border-gray-300'
             type='email'
             name='email'
+            pattern='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
+            required
           />
         </div>
 

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import {
-  FcList,
+  AiOutlineMenu,
+} from 'react-icons/ai';
+import {
   FcHome,
   FcComboChart,
   FcMindMap,
@@ -17,7 +19,7 @@ const Sidenav = () => {
 
   return (
     <div>
-      <FcList size={50}
+      <AiOutlineMenu size={50}
         onClick={handleNav}
         className='absolute top-4 right-4 z-[99] md:hidden'
       />
